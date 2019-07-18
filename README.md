@@ -1,2 +1,24 @@
-# PhreshPlayer-plugins
+# PhreshPlayer plugins
+
 The PhreshPlayer's plugins source codes.
+
+If you want make a new plugin, please download and install the "Demo Plugin" for more information.
+
+## Added plugins
+
+**Demo Plugin** by <a href="https://github.com/Phreshhh" target="_blank">Phresh</a>
+
+Example for develop a new plugin.
+
+
+
+
+
+**FFMPEG Video Converter** by <a href="https://github.com/Phreshhh" target="_blank">Phresh</a>
+
+Automatically convert ".avi" and ".wmw" files to ".mp4" files.
+
+
+**DevTools** by <a href="https://github.com/Phreshhh" target="_blank">Phresh</a>
+
+Toggle show/hide Chrome Developer Tools.
