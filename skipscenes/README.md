@@ -14,14 +14,14 @@ Because other solutions like croping/cutting whole movies/videos are quite time 
 * `00:02:26` - `00:02:26`
 
 3. If there are more than one scenes, define them on new lines, like in the picture below:
-<img src="https://github.com/Phreshhh/PhreshPlayer-plugins/tree/master/skipscenes/assets/img/filecreate-example/p1.png" width="700" alt="Playing video">
+<img src="https://github.com/Phreshhh/PhreshPlayer-plugins/blob/master/skipscenes/assets/img/filecreate-example/p1.png" width="700" alt="Playing video">
 
 4. Now save the file with the **same name** as your video file but with a **`.skip`** extension & then save the **`.skip`** file in the **same directory** as your video file:
-<img src="https://github.com/Phreshhh/PhreshPlayer-plugins/tree/master/skipscenes/assets/img/filecreate-example/p2.png" width="700" alt="Playing video">
-<img src="https://github.com/Phreshhh/PhreshPlayer-plugins/tree/master/skipscenes/assets/img/filecreate-example/p3.png" width="700" alt="Playing video">
+<img src="https://github.com/Phreshhh/PhreshPlayer-plugins/blob/master/skipscenes/assets/img/filecreate-example/p2.png" width="700" alt="Playing video">
+<img src="https://github.com/Phreshhh/PhreshPlayer-plugins/blob/master/skipscenes/assets/img/filecreate-example/p3.png" width="700" alt="Playing video">
 
 6. Now, **drag-n-drop** the video file in Phreshh media player.
-<img src="https://github.com/Phreshhh/PhreshPlayer-plugins/tree/master/skipscenes/assets/img/filecreate-example/p5.png" width="700" alt="Playing video">
+<img src="https://github.com/Phreshhh/PhreshPlayer-plugins/blob/master/skipscenes/assets/img/filecreate-example/p5.png" width="700" alt="Playing video">
 
 7. You will see **skip on/off** button at the bottom right corner of the player controls. From there you can turn skipping on or off.
 **On means**: The scenes you have defined in the .skip file will be skipped automatically during playback.
