@@ -1,13 +1,8 @@
-/* module.exports = {
-  toggleSkipState,
-  skipScene,
-  skipNextScene,
-  loadSkipFile,
-}; */
 module.exports = {
   toggleSkipState
 };
 
+/* TODO: Why need this settings in the config? Remove it and change to global variable in this file */
 if (!store.has('settings.skipscenes')) {
   store.set('settings.skipscenes', false);
 }
@@ -18,12 +13,31 @@ let skipScenes = store.get('settings.skipscenes');
 let i18nPath = path.join(pluginsDir, 'skipscenes', 'assets', 'locales', 'i18n.js');
 const i18n = new(require(i18nPath));
 
-/* extend function */
+/* extend functions */
 let playVideoExtends = playerjs.playVideo;
 playerjs.playVideo = function(videoid) {
   playVideoExtends.apply(this, arguments);
-
-  playlistfile.findOne({ _id: parseInt(videoid) }, function (err, d) {
+  playlistfile.findOne({ _id: parseInt(videoid) }, function(err, d) {
+    loadSkipFile(d._name, d._path); 
+  });
+};
+let playNextExtends = playerjs.playNext;
+playerjs.playNext = function() {
+  playNextExtends.apply(this, arguments);
+  let currPlay = playing.getAttribute("data"); // before jump to next
+  let nextPlay = parseInt(currPlay) + 1;
+  playlistfile.findOne({ _id: parseInt(nextPlay) }, function(err, d) {
+    if (d !== null) {
+      loadSkipFile(d._name, d._path);
+    }
+  });
+};
+let playPrevExtends = playerjs.playPrev;
+playerjs.playPrev = function() {
+  playPrevExtends.apply(this, arguments);
+  let currPlay = playing.getAttribute("data"); // before jump to prev
+  let prevPlay = parseInt(currPlay) - 1;
+  playlistfile.findOne({ _id: parseInt(prevPlay) }, function(err, d) {
     if (d !== null) {
       loadSkipFile(d._name, d._path);
     }

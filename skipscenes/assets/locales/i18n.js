@@ -22,7 +22,6 @@ function i18n() {
 
   }
 
-
 }
 
 i18n.prototype.__ = function(phrase) {
