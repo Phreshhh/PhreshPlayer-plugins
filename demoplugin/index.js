@@ -110,9 +110,8 @@ The currently supported languages '.json' files located is "locales" folder.
 Example to use:
 setToast(i18n.__('playlist') + ' ' + i18n.__('off'));
 
-If you want add new words to the list, you must copy the 'locales' folder, somewhere to your plugin dierctory system.
-This is depends on the 'electron-store' npm package, so you need define in the plugins.json:
-"dependencies": { "electron-store": "1.3.0" },
+If you want add new words to the list, you must download the 'locales.zip' and uppack, somewhere to your plugin dierctory system.
+Require the i18n.js file and fill/rewrite the '.json' files.
 See example usage in the "Skip Scenes" plugin.
 
 
