@@ -1,8 +1,8 @@
 # PhreshPlayer plugins
 
-The PhreshPlayer's plugins source codes.
+The <a href="https://github.com/Phreshhh/PhreshPlayer" target="_blank">PhreshPlayer</a>'s plugins source codes.
 
-If you want make a new plugin, please download and install the "Demo Plugin" for more information.
+If you want make a new plugin, please download and install the "Demo Plugin" (form the <a href="https://github.com/Phreshhh/PhreshPlayer/releases" target="_blank">player</a>) for more information.
 
 ## Added plugins
 
